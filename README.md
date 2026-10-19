@@ -10,6 +10,7 @@ A five letter word guessing game with six tries and colour feedback.
 - Guess validation and a shake animation for bad entries
 - Physical keyboard and on-screen keyboard support
 - New word button
+- A How to play popup explains the rules
 
 ## Running it
 

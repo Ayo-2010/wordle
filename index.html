@@ -22,10 +22,30 @@
   <div class="keyboard" id="keyboard"></div>
 
   <div class="footer">
-    <button class="new" id="newBtn" type="button">New word</button>
+    <div class="footer-actions">
+      <button class="new" id="newBtn" type="button">New word</button>
+      <button class="help-btn" id="helpBtn" type="button">How to play</button>
+    </div>
     <p class="hint">Green is right place, yellow is right letter.</p>
   </div>
 </main>
+
+<div class="help-modal" id="helpModal" hidden>
+  <div class="help-backdrop" data-close></div>
+  <div class="help-dialog" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <button class="help-close" id="helpClose" type="button" aria-label="Close">×</button>
+    <h2 class="help-title" id="helpTitle">How to play</h2>
+    <p class="help-lede">Guess the five letter word in six tries. The colours after each guess tell you how close you are.</p>
+    <ol class="help-steps">
+      <li>Type a five letter word with your keyboard, or use the on-screen keys.</li>
+      <li>Press Enter to submit the guess.</li>
+      <li>Green means the letter is in the word and in the right place.</li>
+      <li>Yellow means the letter is in the word but in a different place.</li>
+      <li>Grey means the letter is not in the word at all.</li>
+      <li>Use the colours to narrow it down. After six guesses the word is revealed.</li>
+    </ol>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
